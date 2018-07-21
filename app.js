@@ -15,11 +15,11 @@ if (process.platform === 'win32') {
 
 // Determine appropriate icon for platform
 if (platform == 'darwin') {
-  trayIcon = path.join(__dirname, 'assets/khan-academy-logo-leaf.png')
+  trayIcon = path.join(__dirname, 'assets/udacity-logo.png')
 } else if (platform == 'win32') {
-  trayIcon = path.join(__dirname, 'assets/khan-academy-logo-leaf.ico')
+  trayIcon = path.join(__dirname, 'assets/udacity-logo.ico')
 } else {
-  trayIcon = path.join(__dirname, 'assets/khan-academy-logo-leaf.ico')
+  trayIcon = path.join(__dirname, 'assets/udacity-logo.ico')
 }
 
 // session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
