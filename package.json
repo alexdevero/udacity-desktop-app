@@ -1,0 +1,59 @@
+{
+  "name": "udacity-desktop-app",
+  "version": "0.0.1",
+  "description": "A simple Udacity desktop app build with electron.",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexdevero/udacity-desktop-app.git"
+  },
+  "homepage": "https://github.com/alexdevero/udacity-desktop-app#readme",
+  "bugs": {
+    "url": "https://github.com/alexdevero/udacity-desktop-app/issues"
+  },
+  "author": {
+    "name": "Alex Devero",
+    "email": "deveroalex@gmail.com",
+    "url": "https://alexdevero.com/"
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "keywords": [
+    "app",
+    "application",
+    "desktop",
+    "desktop-app",
+    "desktop-application",
+    "education",
+    "electron",
+    "electron-app",
+    "javascript",
+    "learning",
+    "udacity"
+  ],
+  "engines": {
+    "node": ">=9.x",
+    "npm": ">=5.x",
+    "yarn": ">=1.x.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "package:linux": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=linux --icon=assets/udacity-logo",
+    "package:macappstore": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=mas --icon=assets/udacity-logo",
+    "package:osx": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=darwin --icon=assets/udacity-logo",
+    "package:win": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=win32 --icon=assets/udacity-logo",
+    "package:all": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=all --icon=assets/udacity-logo",
+    "start": "cross-env NODE_ENV=dev electron app.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron": "^2.0.5",
+    "electron-packager": "^12.1.0"
+  }
+}
