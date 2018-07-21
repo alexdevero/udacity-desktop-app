@@ -1,6 +1,6 @@
 {
   "name": "udacity-desktop-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple Udacity desktop app build with electron.",
   "license": "MIT",
   "private": false,
